@@ -5,8 +5,8 @@ This model is useful to find the BTC price of next 10 days.
 The purpose of this project is to build a machine learning model that predicts Bitcoin prices using historical data.
 
 # Requirements
--- Python: 3.x
--- Libraries: numpy, pandas, matplotlib, keras, sklearn, plotly, mplfinance
+- Python: 3.x
+- Libraries: numpy, pandas, matplotlib, keras, sklearn, plotly, mplfinance
 
 # Data set
 Dataset was downloaded from the yahoo finance website.

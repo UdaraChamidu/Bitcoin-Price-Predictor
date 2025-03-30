@@ -22,10 +22,13 @@ The architecture of the model consists of:
       Output Layer: A single unit output layer that predicts the Bitcoin closing price.
 
 # Model Training
+The model is trained using historical data and split into training and testing.
+Training Set: First portion of the data. (90%)
+Test Set: Remaining data for model evaluation. (10%)
 
 # Prediction
-
-# Plotting
+The trained model is used to predict the Bitcoin price for the next 10 days.
+Predictions are visualized in a line plot showing the future predicted prices.
 
 # Conclusion
 The model successfully predicts Bitcoin prices based on historical data and provides a visualization of the predicted future prices.

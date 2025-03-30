@@ -5,7 +5,7 @@ This model is useful to find the BTC price of next 10 days.
 The purpose of this project is to build a machine learning model that predicts Bitcoin prices using historical data.
 
 # Requirements
-- Python: 3.x
+- Python: 3.x (here 3.1)
 - Libraries: numpy, pandas, matplotlib, keras, sklearn, plotly, mplfinance
 
 # Data set
@@ -17,10 +17,10 @@ The dataset used contains historical Bitcoin prices with columns such as Date, O
   LTSM = Long Short Term Memory
 
 - The architecture of the model consists of:
-      * Input Layer: LSTM layer with 128 units, which returns sequences.
-      * Second LSTM Layer: LSTM layer with 64 units to further learn from the data.
-      * Dense Layer: A fully connected layer with 25 units.
-      * Output Layer: A single unit output layer that predicts the Bitcoin closing price.
+      - Input Layer: LSTM layer with 128 units, which returns sequences.
+      - Second LSTM Layer: LSTM layer with 64 units to further learn from the data.
+      - Dense Layer: A fully connected layer with 25 units.
+      - Output Layer: A single unit output layer that predicts the Bitcoin closing price.
 
 # Model Training
 The model is trained using historical data and split into training and testing.

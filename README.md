@@ -36,6 +36,18 @@ This makes LSTM ideal for predicting prices based on past sequences of daily clo
 
 ---
 
+## 🖥️ Web Interface
+
+Model predicts the future Bitcoin prices and displays the results in a user friendly web application built with Flask.  
+
+- Predicts closing prices of cryptocurrencies.
+- Forecasts future prices for a user defined number of days.
+- Visualizes: Historical closing prices, Original vs. predicted prices and future prices.
+- Built in web interface for user input and result display.
+- Interactive and clean UI using Bootstrap.
+
+---
+
 ## 🎯 Results & Conclusion
 
 - The model effectively captures Bitcoin price trends using historical data.
@@ -58,6 +70,6 @@ This makes LSTM ideal for predicting prices based on past sequences of daily clo
 Install all dependencies with:
 
 ```bash
-pip install yfinance numpy pandas matplotlib scikit-learn tensorflow
+pip install pip install -r requirements.txt
 
 

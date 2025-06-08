@@ -1,35 +1,63 @@
-# Bitcoin-Price-Predictor
-This model is useful to find the BTC price of next 10 days. 
+# Bitcoin Price Predictor 🚀
 
-# Introduction
-The purpose of this project is to build a machine learning model that predicts Bitcoin prices using historical data.
+Predict Bitcoin prices for the next 10 days using historical data and a deep learning LSTM model.
 
-# Requirements
-- Python: 3.x (here 3.1)
-- Libraries: numpy, pandas, matplotlib, keras, sklearn, plotly, mplfinance
+---
 
-# Data set
-Dataset was downloaded from the yahoo finance website.
-The dataset used contains historical Bitcoin prices with columns such as Date, Open, High, Low, Close prices and volume.
+## 📖 Overview
 
-# Model Building
-- LSTM Model: The core of the model is an LSTM network, which is great for time-series forecasting.
-  LTSM = Long Short Term Memory
+This project leverages **15 years of Bitcoin historical price data** from Yahoo Finance to train a deep learning model that forecasts future Bitcoin closing prices. It uses a **Long Short Term Memory (LSTM)** neural network, a specialized architecture for analyzing sequential time series data, to capture trends and dependencies in Bitcoin price movements.
 
-- The architecture of the model consists of:
-      - Input Layer: LSTM layer with 128 units, which returns sequences.
-      - Second LSTM Layer: LSTM layer with 64 units to further learn from the data.
-      - Dense Layer: A fully connected layer with 25 units.
-      - Output Layer: A single unit output layer that predicts the Bitcoin closing price.
+---
 
-# Model Training
-The model is trained using historical data and split into training and testing.
-- Training Set: First portion of the data. (90%)
-- Test Set: Remaining data for model evaluation. (10%)
+## ⚙️ Features
 
-# Prediction
-The trained model is used to predict the Bitcoin price for the next 10 days.
-Predictions are visualized in a line plot showing the future predicted prices.
+- **Automatic data download** from Yahoo Finance (`BTC-USD` pair).
+- Data preprocessing including scaling and moving average calculations.
+- **LSTM-based deep learning model** designed for time-series forecasting.
+- Visualization of:
+  - Historical closing prices
+  - Moving averages (100-day & 365-day)
+  - Actual vs predicted prices on test data
+  - Predicted prices for the upcoming 10 days.
+- Split data into training (90%) and testing (10%) sets for model validation.
 
-# Conclusion
-The model successfully predicts Bitcoin prices based on historical data and provides a visualization of the predicted future prices.
+---
+
+## 🧠 Why LSTM?
+
+LSTM (Long Short Term Memory) networks are powerful recurrent neural networks designed to:
+
+- **Remember long-term dependencies** in sequences, which is crucial for time series data.
+- **Handle the vanishing gradient problem** in traditional RNNs.
+- Effectively learn temporal patterns in Bitcoin price fluctuations for better predictions.
+
+This makes LSTM ideal for predicting prices based on past sequences of daily closing prices.
+
+---
+
+## 🎯 Results & Conclusion
+
+- The model effectively captures Bitcoin price trends using historical data.
+- Predictions align closely with actual prices, demonstrating the power of LSTM for time-series forecasting.
+- Useful for traders, analysts, and enthusiasts interested in BTC price forecasting.
+
+---
+
+## 📦 Requirements
+
+- Python 3.7+
+- Libraries:
+  - `yfinance`
+  - `numpy`
+  - `pandas`
+  - `matplotlib`
+  - `scikit-learn`
+  - `tensorflow` (for Keras)
+
+Install all dependencies with:
+
+```bash
+pip install yfinance numpy pandas matplotlib scikit-learn tensorflow
+
+
